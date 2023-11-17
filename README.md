@@ -6,3 +6,24 @@ Based on this [article](https://fpga-systems.ru/formal-verification-with-symbiyo
 Verification with Verilog and SymbiYosys.
 
 The project hierarchy is based on [SpinalHDL template project](https://github.com/SpinalHDL/SpinalTemplateSbt)
+
+To try to generate HDL with `sbt` run:
+
+```
+# Verilog
+sbt "runMain unary_counter.UnaryCounterVerilog"
+
+# VHDL
+sbt "runMain unary_counter.UnaryCounterVhdl"
+
+```
+
+To run Formal Property Verification:
+
+```
+sbt "runMain unary_counter.UnaryCounterFormal"
+
+```
+
+On 2023.11.17 I didn't implement a way to run different tasks like BMC and Prove for the same DUT. But it's
+cerainly possible to do so.
