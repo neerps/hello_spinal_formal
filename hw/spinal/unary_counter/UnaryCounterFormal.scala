@@ -3,7 +3,6 @@ package unary_counter
 import spinal.core._
 import spinal.core.formal._
 import spinal.lib.CountOne
-import spinal.lib.Counter
 
 object UnaryCounterFormal extends App {
   FormalConfig.withProve(10).doVerify(new Component {
