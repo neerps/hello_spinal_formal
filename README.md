@@ -9,7 +9,7 @@ The project hierarchy is based on [SpinalHDL template project](https://github.co
 
 To try to generate HDL with `sbt` run:
 
-```
+```sh
 # Verilog
 sbt "runMain unary_counter.UnaryCounterVerilog"
 
@@ -20,7 +20,7 @@ sbt "runMain unary_counter.UnaryCounterVhdl"
 
 To run Formal Property Verification:
 
-```
+```sh
 sbt "runMain unary_counter.UnaryCounterFormal"
 
 ```
